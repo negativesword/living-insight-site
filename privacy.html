@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Living Insight 隐私政策</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 48px 20px;
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #1f2328; background: #fff;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  .meta { color: #8c959f; font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 18px; margin: 34px 0 10px; padding-top: 8px; }
+  p, li { color: #3d444d; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eaecef; vertical-align: top; }
+  th { color: #57606a; font-weight: 600; }
+  code { background: #f6f8fa; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  .note { background: #f6f8fa; border-radius: 10px; padding: 14px 16px; margin: 24px 0; color: #57606a; font-size: 15px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #eaecef; color: #8c959f; font-size: 14px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0d1117; color: #e6edf3; }
+    p, li { color: #c9d1d9; }
+    h2 { border-color: #21262d; }
+    th, td { border-color: #21262d; }
+    code { background: #161b22; }
+    .note { background: #161b22; color: #9aa4b2; }
+    footer { border-color: #21262d; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Living Insight 隐私政策</h1>
+  <div class="meta">最后更新：2026 年 11 月 1 日 · 适用版本 1.0.0</div>
+
+  <p>Living Insight（以下简称“本扩展”）是一个在浏览器中记录京东商品价格历史的工具。本政策说明本扩展如何处理你的数据。</p>
+
+  <h2>我们收集什么</h2>
+  <p><strong>不收集任何个人数据。</strong></p>
+  <p>本扩展不会收集、上传或分享：</p>
+  <ul>
+    <li>浏览历史</li>
+    <li>账号、Cookie 或登录状态</li>
+    <li>订单信息</li>
+    <li>设备标识、IP 地址</li>
+    <li>任何可识别个人身份的信息</li>
+  </ul>
+
+  <h2>数据存在哪里</h2>
+  <p>价格记录、关注的商品与目标价，全部保存在你浏览器本地的 <code>chrome.storage.local</code> 中。</p>
+  <ul>
+    <li>不会离开你的设备</li>
+    <li>不会同步到任何服务器</li>
+    <li>可以在扩展弹窗中导出为 JSON 文件</li>
+    <li>删除扩展或清理扩展数据即可移除全部记录</li>
+  </ul>
+
+  <h2>网络请求</h2>
+  <p>本扩展<strong>不发起任何额外的网络请求</strong>。它只读取你当前已打开的京东商品页面上已经显示出来的价格文本，并记录在你本机。</p>
+
+  <h2>权限用途</h2>
+  <table>
+    <thead><tr><th>权限</th><th>用途</th></tr></thead>
+    <tbody>
+      <tr><td><code>storage</code></td><td>在本机保存价格历史与关注列表，不上传</td></tr>
+      <tr><td><code>notifications</code></td><td>价格低于你设定的目标价时提醒你</td></tr>
+      <tr><td><code>https://item.jd.com/*</code></td><td>在商品页展示价格面板所需的最小权限</td></tr>
+    </tbody>
+  </table>
+
+  <h2>第三方</h2>
+  <p>本扩展不包含任何分析、广告或第三方追踪代码。</p>
+
+  <h2>儿童隐私</h2>
+  <p>本扩展不面向儿童，也不收集任何年龄相关信息。</p>
+
+  <h2>政策变更</h2>
+  <p>若本政策发生变更，会在扩展更新说明中告知。继续使用即表示接受更新后的政策。</p>
+
+  <h2>联系</h2>
+  <p>如有疑问，请通过扩展详情页提供的联系方式反馈。</p>
+
+  <div class="note">
+    一句话总结：所有数据都留在你自己的浏览器里，我们没有服务器，也看不到你的任何记录。
+  </div>
+
+  <footer>Living Insight · 京东价格历史记录器</footer>
+</main>
+</body>
+</html>

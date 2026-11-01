@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Living Insight — 记录你看过的京东价格</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 40px 20px; background: #f6f7f8; color: #1f2328;
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  .card {
+    max-width: 560px; background: #fff; border: 1px solid #e3e5e8; border-radius: 16px;
+    padding: 36px 32px; text-align: center;
+  }
+  .logo { width: 72px; height: 72px; border-radius: 18px; background: #2f6feb; margin: 0 auto 18px; display: flex; align-items: center; justify-content: center; }
+  .logo::after { content: ""; width: 30px; height: 30px; border: 7px solid #fff; border-radius: 50%; }
+  h1 { font-size: 22px; margin: 0 0 8px; }
+  p { color: #57606a; margin: 0 0 22px; }
+  a.btn {
+    display: inline-block; text-decoration: none; background: #2f6feb; color: #fff;
+    padding: 10px 20px; border-radius: 10px; font-size: 15px;
+  }
+  a.btn:hover { background: #1f5ad4; }
+  .links { margin-top: 24px; font-size: 14px; }
+  .links a { color: #57606a; margin: 0 10px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0d1117; color: #e6edf3; }
+    .card { background: #161b22; border-color: #21262d; }
+    p, .links a { color: #9aa4b2; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo"></div>
+    <h1>Living Insight</h1>
+    <p>记录你看过的京东价格，越用越懂这个价。<br>数据只存在本机，不上传、不追踪。</p>
+    <a class="btn" href="privacy.html">隐私政策</a>
+    <div class="links">
+      <a href="https://item.jd.com/">京东</a>
+    </div>
+  </div>
+</body>
+</html>
